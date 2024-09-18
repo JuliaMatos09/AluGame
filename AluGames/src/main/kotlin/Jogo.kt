@@ -1,17 +1,15 @@
 package org.example
 
-class Jogo {
-    var titulo = ""
-    var capa = ""
+import com.google.gson.annotations.SerializedName
+
+class Jogo(val titulo:String,
+           val capa:String) {
     val descricao = ""
 
     override fun toString(): String {
-        return "Meu Jogo: \n"+
-                "Titulo: $titulo \n"+
-                "Capa: $capa\n"+
+        return "Meu Jogo: \n" +
+                "Título: $titulo \n" +
+                "Capa: $capa \n" +
                 "Descricao: $descricao"
-
     }
-
-
 }
